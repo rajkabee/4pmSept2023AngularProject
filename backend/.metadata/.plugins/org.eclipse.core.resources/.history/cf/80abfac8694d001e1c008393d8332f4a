@@ -1,0 +1,31 @@
+package com.example.demo;
+
+import java.sql.Date;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString
+@Entity
+@Table(name="travel_packages")
+public class TravelPackage {
+	
+	int id;
+	String name;
+	Date startDate;
+	Date endDate;
+	Destination destination;
+	List<Destination> attractions;
+	int cost;
+	int additionalCost;
+	
+}

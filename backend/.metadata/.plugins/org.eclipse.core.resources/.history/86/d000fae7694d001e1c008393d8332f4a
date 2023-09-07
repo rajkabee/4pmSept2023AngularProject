@@ -1,0 +1,12 @@
+package com.example.demo;
+
+public class Address {
+	int id;
+	String name;
+	String street;
+	String city;
+	String state;
+	String province;
+	String country;
+	
+}
